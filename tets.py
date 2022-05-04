@@ -6,6 +6,6 @@ from law import LawPlanet
 # maypalanet.accelerationG()
 
 
-g  = ((6.673*10)**-11)
-
-print(g)
+bumi = LawPlanet("erth",6,24,6.4,6)
+bumi.accelerationG()
+LawPlanet.info_mass()
