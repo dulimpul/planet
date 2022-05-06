@@ -1,5 +1,6 @@
 import math
 
+
 class LawPlanet:
 
     def __init__(self,nameplanet,massPlanet,powMassPlanet,radiusPlanet,powMassrad):
@@ -22,28 +23,33 @@ class LawPlanet:
         
         return print(self.name, g , " m/s")
 
-    
-    def periodeOfRevolu(self):
-        pass
-    
-    
-    def info_mass():
-        print("""
-The planets by mass :
+    # calculate the period of the planet
+    def RevoluPlan(self,AuDistanceSun):
+        """
+        use kepler's law 
+        if the distance is only in the solar systemif the distance is only in the solar system
+        law III
+        T1^2/r1^3 = T2^2/r2^3 or (T1/T2)^2 = (r1/r2)^3
 
-  planet           Mass         Powers      Unit
+        refers to the earth
+        T1 =  365 day
+        r1 = 1 As/Au (Astronimical Unit)
+        r2 = the distance from the planet you want to know the revolution = var AuDistanceSun
 
-1. Mercury      3.285 × 10        ^23        Kg
-2. Venus        4.867 × 10        ^24        Kg
-3. Earth        5.972 × 10        ^24        Kg
-4. Mars         6.39  × 10        ^23        Kg
-5. Jupiter      1.898 × 10        ^27        Kg
-6. Saturn       5.683 × 10        ^26        Kg
-7. Uranus       8.681 × 10        ^25        Kg
-8. Neptune      1.024 × 10        ^26        Kg
-9. pluto        1.309 × 10        ^22        Kg
-""")
-   
+        """
+        
+        Ttow = math.sqrt((1/AuDistanceSun)**3)
+        return print("the revolution is {}".format(365/Ttow))
+    
+    
+
+
+
+
+
+
+
+
             
 
 
