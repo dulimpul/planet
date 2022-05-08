@@ -15,4 +15,23 @@ The planets by mass :
 8. Neptune      1.024 × 10        ^26        Kg
 9. pluto        1.309 × 10        ^22        Kg
 """)
-   
+  
+def info_distancePlane():
+    print("""
+The planets by distance :
+
+
+  planet          Austronomical Unit 
+
+1. Mercury                0.4
+2. Venus                  1.14
+3. Earth                  1
+4. Mars                   1.52
+5. Jupiter                5.2     
+6. Saturn                 9.5
+7. Uranus                 19.8 
+8. Neptune                30.11
+9. pluto                  39.5
+
+    
+    """)

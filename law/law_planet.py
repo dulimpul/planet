@@ -10,6 +10,7 @@ class LawPlanet:
         self.powMaP = powMassPlanet
         self.powMaRad = powMassrad
 
+    # acceleration gravity
     def accelerationG(self):
         
         """ 
@@ -39,7 +40,8 @@ class LawPlanet:
         """
         
         Ttow = math.sqrt((1/AuDistanceSun)**3)
-        return print("the revolution is {}".format(365/Ttow))
+        
+        return print("the revolution is {} yer conversion day is {} ".format((365/Ttow)/365,365/Ttow))
     
     
 
