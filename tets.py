@@ -1,5 +1,5 @@
 from law import LawPlanet, law_planet
-from info import info_mass,info_distancePlane
+from info import info_mass,info_distancePlane,infoRadiusPlanet
 
 
 # maypalanet = LawPlanet("bumi",5.972)
@@ -22,3 +22,6 @@ info_mass()
 
 # info distance from planet to earth
 info_distancePlane()
+
+# info radius planets
+infoRadiusPlanet()
