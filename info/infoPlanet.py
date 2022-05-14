@@ -1,3 +1,6 @@
+# ATTENTION 
+# if you add information then continue the list in function
+
 # info massa
 def info_mass():
     print("""
@@ -35,3 +38,25 @@ The planets by distance :
 
     
     """)
+
+
+def infoRadiusPlanet():
+  print("""
+
+Radius of planets :
+
+  planets             Meter          power
+
+1. Mercury          2.43 x 10         ^6            
+2. Venus            6.05 x 10         ^6
+3. Earth            6.37 x 10         ^6
+4. Mars             3.38 x 10         ^6  
+5. Jupiter          69.9 x 10         ^6       
+6. Saturn           58.2 x 10         ^6
+7. Uranus           25.3 x 10         ^6 
+8. Neptune          24.6 x 10         ^6
+9. pluto            1.18 x 10         ^6
+  
+  
+  
+  """)
