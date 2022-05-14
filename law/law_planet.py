@@ -17,7 +17,10 @@ class LawPlanet:
          acceleration due to gravity formula = g = G.M1/r2
          Konstanta universal cavendish G =  ( 6,673 x 10⁻¹¹)
          mass planet = M1
-         circle radius planet = r2   
+         circle radius planet = r2 
+         example :
+         g = ( 6,673 x 10⁻¹¹) * 5.972 × 10^24 / 6.37 x 10^6
+
         """
 
         g = 6.67*(10**-11) * self.mass*(10**self.powMaP) / (self.radius*(10**self.powMaRad))**2
@@ -42,6 +45,8 @@ class LawPlanet:
         Ttow = math.sqrt((1/AuDistanceSun)**3)
         
         return print("the revolution is {} yer conversion day is {} ".format((365/Ttow)/365,365/Ttow))
+
+    # 
     
     
 
