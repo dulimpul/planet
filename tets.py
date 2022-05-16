@@ -1,5 +1,6 @@
 from law import LawPlanet, law_planet
 from info import info_mass,info_distancePlane,infoRadiusPlanet
+from decoration import colors 
 
 
 # maypalanet = LawPlanet("bumi",5.972)
@@ -25,3 +26,6 @@ info_distancePlane()
 
 # info radius planets
 infoRadiusPlanet()
+
+#tetst decoration 
+print(colors.CRED + "halo dunia test" + colors.CEND)
