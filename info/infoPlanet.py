@@ -1,9 +1,20 @@
 # ATTENTION 
 # if you add information then continue the list in function
 
+import pathlib
+import sys
+import os
+from turtle import color
+
+# path folder
+tetst =  pathlib.Path.cwd()
+sys.path.insert(0,tetst)
+
+from decoration.color import colors
+
 # info massa
 def info_mass():
-    print("""
+    print(colors.CBLUE2 + """ 
 The planets by mass :
 
   planet           Mass         Powers      Unit
@@ -17,10 +28,10 @@ The planets by mass :
 7. Uranus       8.681 × 10        ^25        Kg
 8. Neptune      1.024 × 10        ^26        Kg
 9. pluto        1.309 × 10        ^22        Kg
-""")
+"""+ colors.CEND)
   
 def info_distancePlane():
-    print("""
+    print(colors.CRED2 + """
 The planets by distance :
 
 
@@ -37,7 +48,7 @@ The planets by distance :
 9. pluto                  39.5
 
     
-    """)
+    """+ colors.CEND)
 
 
 def infoRadiusPlanet():
