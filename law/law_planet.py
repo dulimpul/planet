@@ -1,5 +1,12 @@
 import math
+import pathlib
+import sys
 
+# path folder
+tetst =  pathlib.Path.cwd()
+sys.path.insert(0,tetst)
+
+from decoration.color import colors
 
 class LawPlanet:
 
@@ -25,9 +32,9 @@ class LawPlanet:
 
         g = 6.67*(10**-11) * self.mass*(10**self.powMaP) / (self.radius*(10**self.powMaRad))**2
         
-        return print(self.name, g , " m/s")
+        return print(f"{self.name} {colors.CRED}{g}{colors.CEND} m/s")
 
-    # calculate the period of the planet
+    # calculate the Revolution of the planet
     def RevoluPlan(self,AuDistanceSun):
         """
         use kepler's law 
@@ -44,7 +51,7 @@ class LawPlanet:
         
         Ttow = math.sqrt((1/AuDistanceSun)**3)
         
-        return print("the revolution is {} yer conversion day is {} ".format((365/Ttow)/365,365/Ttow))
+        return print(f"the revolution is {colors.CRED}{(365/Ttow)/365}{colors.CEND} yer conversion day is {colors.CRED}{365/Ttow}{colors.CRED} ")
 
     # 
     

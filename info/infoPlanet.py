@@ -4,7 +4,7 @@
 import pathlib
 import sys
 import os
-from turtle import color
+
 
 # path folder
 tetst =  pathlib.Path.cwd()

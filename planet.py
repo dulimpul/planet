@@ -1,9 +1,10 @@
-from pickletools import int4
+import os
 import sys
 import argparse
 
 from law.law_planet import LawPlanet
 from decoration.color import colors
+from decoration.menus import menuMinPlanets
 from info.infoPlanet import *
 
 
@@ -13,7 +14,7 @@ def infoMenu():
     info_mass()
     infoRadiusPlanet()
 
-def lawMenus(name):
+def lawAccelerationPlanet(name):
 
     Xlaw = LawPlanet(
         nameplanet=name,
@@ -25,6 +26,30 @@ def lawMenus(name):
     )
     print("\n")
     Xlaw.accelerationG()
+
+def optionMenusPlanet():
+    os.system("clear")
+    menuMinPlanets()
+    
+    try:
+        inputKey = int(input("Input key Number list : "))
+    except ValueError or KeyboardInterrupt:
+        optionMenusPlanet()
+
+
+    if inputKey ==  1:
+        lawAccelerationPlanet(planetOpt)
+    elif inputKey == 2:
+        print("test")
+    elif inputKey == 3:
+        validation = input("are you sure to exit [yes/no] ? :")
+        if validation == "yes":
+            exit()
+        else:
+            optionMenusPlanet()
+    else:
+        optionMenusPlanet()
+
 
 def planex():
     print(colors.CBLUE2 + """
@@ -58,7 +83,7 @@ if __name__ == "__main__":
     
 
     if planetOpt:
-        lawMenus(planetOpt)
+        optionMenusPlanet()
     elif sunOpt:
         print(sunOpt)
     elif infoOpt:
